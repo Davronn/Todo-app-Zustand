@@ -1,0 +1,51 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Montserrat;
+}
+.container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 50px;
+  .todos {
+    ul {
+      width: 600px;
+      justify-content: space-between;
+      li {
+        display: flex;
+        justify-content: space-between;
+        list-style-type: none;
+        align-items: center;
+        font-size: 18px;
+        margin: 4px 0px;
+        padding: 4px;
+        border-radius: 10px;
+        background-color: antiquewhite;
+        button {
+          margin-right: 15px;
+          padding: 8px;
+          border-radius: 5px;
+          border: none;
+          cursor: pointer;
+          background-color: crimson;
+          color: antiquewhite;
+        }
+      }
+      .complated {
+        margin-right: 10px;
+      }
+      .true {
+        max-width: 400px;
+        cursor: pointer;
+      }
+      .falce {
+        max-width: 400px;
+        text-decoration: line-through;
+        cursor: pointer;
+      }
+    }
+  }
+}

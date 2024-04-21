@@ -1,0 +1,34 @@
+{
+  "todos": [
+    {
+      "id": "0327",
+      "title": "watch lesson",
+      "completed": true
+    },
+    {
+      "id": "06e1",
+      "title": "homework",
+      "completed": false
+    },
+    {
+      "id": "3ee6",
+      "title": "go to mountain",
+      "completed": true
+    },
+    {
+      "id": "d979",
+      "title": "get feedback",
+      "completed": false
+    },
+    {
+      "id": "3441",
+      "title": "test ",
+      "completed": true
+    },
+    {
+      "id": "3b2b",
+      "title": "homework 83-lesson",
+      "completed": true
+    }
+  ]
+}
