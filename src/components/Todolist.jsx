@@ -5,20 +5,12 @@ import Todoadd from "./Todoadd";
 import TodoZustand from "../app/todos/todoZustand";
 
 function Todolist() {
-  const { todos, fetchTodos,toggleTodo,deleteTodo } = TodoZustand();
+  const { todos, fetchTodos, toggleTodo, deleteTodo } = TodoZustand();
 
   useEffect(() => {
     fetchTodos();
   }, []);
-const todoLenght = todos.length
-
-  const handleToggleTodo = (id) => {
-    dispatch(toggleTodo(id));
-  };
-
-  const handleDeleteTodo = (id) => {
-    dispatch(deleteTodo(id));
-  };
+  const todoLenght = todos.length;
 
   return (
     <div className="container">
@@ -39,12 +31,13 @@ const todoLenght = todos.length
                   {todo.title}
                 </span>{" "}
                 <div>
-                  <span className="complated">
+                  <span
+                    className="complated"
+                    onClick={() => toggleTodo(todo.id)}
+                  >
                     {todo.completed ? "✅" : "❌"}
                   </span>
-                  <button onClick={() => deleteTodo(todo.id)}>
-                    Delete
-                  </button>
+                  <button onClick={() => deleteTodo(todo.id)}>Delete</button>
                 </div>
               </li>
             ))}
