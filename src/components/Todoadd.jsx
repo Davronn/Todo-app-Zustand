@@ -14,6 +14,7 @@ function Todoadd() {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
+    if (!inputValue.trim()) return;
     await TodoZustand.getState().addTodo({
       title: inputValue,
       completed: false,
